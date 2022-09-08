@@ -19,7 +19,7 @@ int main(void)
 	printf("Size of a char: ", sizeof(ch), " byte(s)\n",
 		"Size of an int: ", sizeof(in), " byte(s)\n",
 		"Size of a long int: ", sizeof(ln), " byte(s)\n",
-		"Size of a long long int: ", sizeof(lln), " byte(s)\n",
+		"Size of a long long int: ", sizeof(ll), " byte(s)\n",
 		"Size of a float: ", sizeof(fl), " byte(s)\n");
 	return (0);
 }
