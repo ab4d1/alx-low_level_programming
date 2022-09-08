@@ -22,6 +22,6 @@ void makeItSo(char *str)
 
 int main(void)
 {
-	makeItSo("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	makeItSo("\n91-01-5102 ,raproK aroD - \"lufesu si tra fo eceip taht dna");
 	return (0);
 }
