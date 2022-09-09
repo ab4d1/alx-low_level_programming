@@ -1,14 +1,8 @@
 #include<stdio.h>
 
 /**
- * main - Entry point
- *
- * prints some lines
- *
- * Return: Always(0)
- *
  * makeItSo - Print string
- * 	str - string
+ * @str: string
  * Return: no return
  */
 
@@ -19,6 +13,13 @@ void makeItSo(char *str)
 	makeItSo(str + 1);
 	putchar(*str);
 }
+
+/**
+ * main - Entry point
+ * prints some lines
+ * Return: Always(0)
+ *
+ */
 
 int main(void)
 {
