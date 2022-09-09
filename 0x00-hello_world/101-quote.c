@@ -17,12 +17,12 @@ void makeItSo(char *str)
 /**
  * main - Entry point
  * prints some lines
- * Return: Always(0)
+ * Return: Always(1)
  *
  */
 
 int main(void)
 {
 	makeItSo("\n91-01-5102 ,raproK aroD - \"lufesu si tra fo eceip taht dna");
-	return (0);
+	return (1);
 }
