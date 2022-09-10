@@ -20,9 +20,9 @@ int main(void)
 	alpha = 'A';
 
 	for (i = 0; i < 26; i++)
-        {
-                putchar(alpha + i);
-        }
+	{
+		putchar(alpha + i);
+	}
 
 	putchar('\n');
 
