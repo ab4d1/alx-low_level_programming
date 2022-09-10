@@ -10,8 +10,9 @@ int main(void)
 {
 
 	char alpha = 'a';
+	int i = 0;
 
-	for (int i = 0; i < 26; i++)
+	for (i = 0; i < 26; i++)
 	{
 		putchar(alpha + i);
 	}
