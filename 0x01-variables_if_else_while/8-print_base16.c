@@ -17,7 +17,7 @@ int main(void)
 		putchar(alpha + i);
 	}
 
-	alpha = 'A';
+	alpha = 'a';
 
 	for (i = 0; i < 6; i++)
 	{
