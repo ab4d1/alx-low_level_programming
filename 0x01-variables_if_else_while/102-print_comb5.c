@@ -11,8 +11,6 @@ int main(void)
 
 	int i = 0;
 	int j = 0;
-	int k = 0;
-	int u = 0;
 
 	for (i = 0; i < 100; i++)
 	{
