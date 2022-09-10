@@ -14,27 +14,20 @@ int main(void)
 	int k = 0;
 	int u = 0;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = i; j < 100; j++)
 		{
-			for (k = i; k < 10; k++)
+
+			putchar('0' + ((i / 10) % 10));
+			putchar('0' + (i % 10));
+			putchar(' ');
+			putchar('0' + ((j / 10) % 10));
+			putchar('0' + (j % 10));
+			if (!(i == 98 && j == 99))
 			{
-				for (u = j + 1; u < 10; u++)
-				{
-
-					putchar('0' + i);
-					putchar('0' + j);
-					putchar(' ');
-					putchar('0' + k);
-					putchar('0' + u);
-
-					if (!(i == 7 && j == 8 && k == 9))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
