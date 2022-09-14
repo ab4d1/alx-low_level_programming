@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - entry
@@ -10,12 +9,12 @@
 int main(void)
 {
 
-	char* a = "_putchar";
-	long unsigned int i = 0;
+	char alpha = 'a';
+	int i = 0;
 
-	for (i = 0; i < strlen(a); i++)
+	for (i = 0; i < 26; i++)
 	{
-		putchar(a[i]);
+		putchar(alpha + i);
 	}
 
 	putchar('\n');
