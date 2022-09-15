@@ -1,4 +1,3 @@
-#include <string.h>
 #include "main.h"
 
 /**
@@ -13,7 +12,7 @@ int main(void)
 	char *a = "_putchar";
 	unsigned long int i = 0;
 
-	for (i = 0; i < strlen(a); i++)
+	for (i = 0; i < 8; i++)
 	{
 		_putchar(a[i]);
 	}
