@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 
 /**
@@ -14,7 +15,7 @@ int main(void)
 
 	for (i = 0; i < strlen(a); i++)
 	{
-		putchar(a[i]);
+		_putchar(a[i]);
 	}
 
 	putchar('\n');
