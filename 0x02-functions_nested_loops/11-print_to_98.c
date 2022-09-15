@@ -11,7 +11,7 @@ void print_to_98(int n)
 {
 	int i = 0;
 
-	printf("sa");
+	puts("sa");
 	_putchar('L');
 	if (n < 98)
 	{
