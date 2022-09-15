@@ -2,7 +2,8 @@
 
 /**
  * add - add
- *
+ *@a: int a
+ *@b: int b
  * Return:int
  */
 
