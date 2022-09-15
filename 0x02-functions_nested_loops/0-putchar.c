@@ -18,7 +18,7 @@ int main(void)
 		_putchar(a[i]);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 
 
 	return (0);
