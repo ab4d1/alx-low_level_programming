@@ -10,7 +10,8 @@
 void print_to_98(int n)
 {
 	int i = 0;
-
+	
+	_putchar('L');
 	if (n < 98)
 	{
 		for (i = n; i < 98; i++)
