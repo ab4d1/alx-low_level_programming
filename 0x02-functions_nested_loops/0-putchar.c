@@ -1,7 +1,6 @@
 #include <string.h>
-/*
- * #include "main.h"
-*/
+#include "main.h"
+
 /**
  * main - entry
  * print alphabet
