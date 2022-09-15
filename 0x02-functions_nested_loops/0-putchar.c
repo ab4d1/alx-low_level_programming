@@ -10,8 +10,8 @@
 int main(void)
 {
 
-	char* a = "_putchar";
-	long unsigned int i = 0;
+	char *a = "_putchar";
+	unsigned long int i = 0;
 
 	for (i = 0; i < strlen(a); i++)
 	{
