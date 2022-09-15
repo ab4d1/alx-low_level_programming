@@ -8,12 +8,11 @@
 
 int _abs(int n)
 {
-	int ret = 0;
 
 	if (n < 0)
 	{
-		ret = - n;
+		n = - n;
 	}
 	
-	return (ret);
+	return (n);
 }
