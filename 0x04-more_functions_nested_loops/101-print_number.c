@@ -22,15 +22,17 @@ void print_number(int n)
 		_putchar('0');
 	}
 
-	for (i = 0; n > 0 ; i++)
+	for (i = 0; n > 9 ; i++)
 	{
 		m = m * 10;
 		m = m + n % 10;
 		n = n / 10;
 	}
+	_putchar('0' + n);
 	for (j = 0; m > 0 ; j++)
 	{
 		_putchar('0' + m % 10);
 		m = m / 10;
 	}
+
 }
