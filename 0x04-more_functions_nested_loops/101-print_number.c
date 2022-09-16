@@ -16,7 +16,7 @@ void print_number(int n)
 		_putchar('-');
 		n = -n;
 	}
-	for (i = 1000000000; n > 0 ; i = i / 10)
+	for (i = 10000000000; n > 0 ; i = i / 10)
 	{
 		_putchar('L');
 		if (n / i == 0)
