@@ -27,6 +27,8 @@ void print_number(int n)
 		m = m + n % 10;
 		n = n / 10;
 	}
+	if (n != 0)
+		_putchar('0' + n);
 	for (j = 0; m > 0 ; j++)
 	{
 		_putchar('0' + m % 10);
