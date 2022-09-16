@@ -11,7 +11,7 @@ void print_to_98(int n)
 {
 	int i = 0;
 	
-	_putchar('L')
+	printf("L");
 	if (n < 98)
 	{
 		for (i = n; i < 98; i++)
@@ -29,5 +29,5 @@ void print_to_98(int n)
 	} else
 		printf("98");
 
-	_putchar('\n');
+	printf("\n");
 }
