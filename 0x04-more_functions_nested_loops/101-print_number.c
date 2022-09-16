@@ -18,6 +18,7 @@ void print_number(int n)
 	}
 	for (i = 1000000000; i < n; i = i / 10)
 	{
+		_putchar('0' + i % 10);
 		if (n / i)
 		{
 			break;
