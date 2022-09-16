@@ -26,6 +26,7 @@ int main(void)
 			{
 				if (d % i)
 				{
+					printf("%i", i);
 					d = d / i;
 					lpf = i;
 					break;
