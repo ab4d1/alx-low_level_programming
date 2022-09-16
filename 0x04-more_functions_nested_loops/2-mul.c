@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isupper - is upper
+ * mul - mul
  *@a: int
  *@b: int
  * Return: is upper
