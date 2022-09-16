@@ -16,13 +16,13 @@ void print_number(int n)
 		_putchar('-');
 		n = -n;
 	}
-	for (i = 1000; i < n; i--)
+	for (i = 1000000000; i < n; i = i / 10)
 	{
-		if (n / pow(10, i))
+		if (n / i)
 		{
 			break;
 		}
-		_putchar('0' + (n / pow(10, i) % 10));
-		n = n / pow(10, i);
+		_putchar('0' + (n / i % 10));
+		n = n / i;
 	}
 }
