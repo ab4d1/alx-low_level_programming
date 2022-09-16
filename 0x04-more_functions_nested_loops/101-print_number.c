@@ -24,6 +24,7 @@ void print_number(int n)
 	{
 		m = m * 10;
 		m = n % i;
+		n = n / 10;
 	}
 	printf("%i", m);
 }
