@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_square - print
+ * print_triangle - print
  *@size: int
  *Return: void
  */
