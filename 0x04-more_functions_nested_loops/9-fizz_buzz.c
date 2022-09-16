@@ -24,6 +24,7 @@ int main(void)
 		{
 			printf("%i", i);
 		}
+
 		if (i == 100)
 		{
 			printf("\n");
@@ -32,4 +33,5 @@ int main(void)
 			printf(" ");
 		}
 	}
+	return (0);
 }
