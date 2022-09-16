@@ -9,8 +9,7 @@
 int main(void)
 {
 	int i = 0;
-	int n = 612852475143;
-	int d = 612852475143;
+	long int d = 612852475143;
 	int lpf = 0;
 
 	while (d > 1)
