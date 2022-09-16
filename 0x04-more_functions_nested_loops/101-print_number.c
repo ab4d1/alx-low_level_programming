@@ -22,7 +22,7 @@ void print_number(int n)
 		{
 			break;
 		}
-		_putchar('0' + (n / i % 10));
+		_putchar('0' + ((n / i) % 10));
 		n = n / i;
 	}
 }
