@@ -26,10 +26,10 @@ int main(void)
 		}
 		if (i == 100)
 		{
-			printf('\n');
+			printf("\n");
 		} else
 		{
-			printf(' ');
+			printf(" ");
 		}
 	}
 }
