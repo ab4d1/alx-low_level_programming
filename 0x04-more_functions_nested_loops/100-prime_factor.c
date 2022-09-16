@@ -22,7 +22,7 @@ int main(void)
 			lpf = 2;
 		} else
 		{
-			printf("%i", d);
+			printf("%li", d);
 			for (i = 3; i < sqrt(d); i = i + 2)
 			{
 				if (d % i == 0)
