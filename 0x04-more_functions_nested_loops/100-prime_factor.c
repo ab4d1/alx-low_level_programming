@@ -16,7 +16,7 @@ int main(void)
 
 	while (d > 1)
 	{
-		if (d % 2)
+		if (d % 2 == 0)
 		{
 			d = d / 2;
 			lpf = 2;
@@ -24,7 +24,7 @@ int main(void)
 		{
 			for (i = 3; i < sqrt(d); i = i + 2)
 			{
-				if (d % i)
+				if (d % i == 0)
 				{
 					printf("%i", i);
 					d = d / i;
