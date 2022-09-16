@@ -17,11 +17,7 @@ void print_number(int n)
 	{
 		_putchar('-');
 		n = -n;
-	} else if (n == 0)
-	{
-		_putchar('0');
 	}
-
 	for (i = 0; n > 9 ; i++)
 	{
 		m = m * 10;
