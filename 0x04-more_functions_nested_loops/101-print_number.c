@@ -21,11 +21,11 @@ void print_number(int n)
 		n = -n;
 	}
 
-	for (i = 0; n > 0 ; i = i * 10)
+	for (i = 0; n > 0 ; i++)
 	{
 		_putchar('L');
-		/*m = m * 10;*/
-		/*m = n % i;*/
+		m = m * 10;
+		m = n % 10;
 		n = n / 10;
 	}
 	printf("%i", m);
