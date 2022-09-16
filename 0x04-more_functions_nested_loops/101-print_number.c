@@ -1,3 +1,4 @@
+#include <math.h>
 #include "main.h"
 
 /**
@@ -17,11 +18,11 @@ void print_number(int n)
 	}
 	for (i = 1000; i < n; i--)
 	{
-		if (n / (10 ** i))
+		if (n / pow(10, i))
 		{
 			break;
 		}
-		_putchar('0' + (n / (10 ** i) % 10));
-		n = n / (10 ** i);
+		_putchar('0' + (n / pow(10, i) % 10));
+		n = n / pow(10, i);
 	}
 }
