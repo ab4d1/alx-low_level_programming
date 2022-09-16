@@ -28,11 +28,13 @@ int main(void)
 				{
 					d = d / i;
 					lpf = i;
+					break;
 				}
 			}
+
 		}
 	}
-
 	printf("%i", lpf);
+
 	return (0);
 }
