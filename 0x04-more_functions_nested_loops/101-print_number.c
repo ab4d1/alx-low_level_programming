@@ -21,7 +21,7 @@ void print_number(int n)
 		_putchar('0' + i % 10);
 		if (n / i == 0)
 		{
-			break;
+			continue;
 		}
 		_putchar('0' + ((n / i) % 10));
 		n = n / i;
