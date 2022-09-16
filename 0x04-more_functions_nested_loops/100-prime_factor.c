@@ -22,6 +22,7 @@ int main(void)
 			lpf = 2;
 		} else
 		{
+			printf("%i", d);
 			for (i = 3; i < sqrt(d); i = i + 2)
 			{
 				if (d % i == 0)
@@ -35,7 +36,7 @@ int main(void)
 
 		}
 	}
-	printf("%i", lpf);
+	printf("%i\n", lpf);
 
 	return (0);
 }
