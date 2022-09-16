@@ -23,10 +23,13 @@ void print_number(int n)
 
 	for (i = 0; n > 0 ; i++)
 	{
-		_putchar('L');
 		m = m * 10;
 		m = m + n % 10;
 		n = n / 10;
 	}
-	printf("%i", m);
+	for (j = 0; m > 0 ; j++)
+	{
+		_putchar('0' + m % 10);
+		m = m / 10;
+	}
 }
