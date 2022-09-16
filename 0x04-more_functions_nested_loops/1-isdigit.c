@@ -2,6 +2,7 @@
 
 /**
  * _isdigit - is upper
+ *@c: char
  * Return: is upper
  */
 
