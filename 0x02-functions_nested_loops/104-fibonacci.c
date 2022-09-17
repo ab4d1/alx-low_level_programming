@@ -16,7 +16,7 @@ int main(void)
 	unsigned long int fib = 0;
 
 	printf("%li, %li, ", a, b);
-	for (i = 1; i < 90; i++)
+	for (i = 1; i < 96; i++)
 	{
 		fib = a + b;
 		a = b;
