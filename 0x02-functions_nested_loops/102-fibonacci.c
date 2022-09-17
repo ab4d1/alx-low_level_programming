@@ -16,7 +16,7 @@ int main(void)
 	long int sum = 0;
 
 	printf("%li, %li, ", a, b);
-	for (i = 1; i < 50; i++)
+	for (i = 1; i < 48; i++)
 	{
 		sum = a + b;
 		a = b;
