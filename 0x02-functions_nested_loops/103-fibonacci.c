@@ -14,7 +14,7 @@ int main(void)
 	long int a = 1;
 	long int b = 2;
 	long int fib = 0;
-	long int sum = 0;
+	long int sum = 2;
 
 	for (i = 1; fib < 4000000; i++)
 	{
