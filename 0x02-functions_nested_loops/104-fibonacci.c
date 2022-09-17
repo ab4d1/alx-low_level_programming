@@ -15,14 +15,14 @@ int main(void)
 	double b = 2;
 	double fib = 0;
 
-	printf("%d, %d, ", a, b);
+	printf("%f, %f, ", a, b);
 	for (i = 1; i < 96; i++)
 	{
 		fib = a + b;
 		a = b;
 		b = fib;
-		printf("%d, ", fib);
+		printf("%f, ", fib);
 	}
-	printf("%d\n", fib);
+	printf("%f\n", fib);
 	return (0);
 }
