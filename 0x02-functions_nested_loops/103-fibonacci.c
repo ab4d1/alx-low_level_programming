@@ -18,7 +18,7 @@ int main(void)
 	for (i = 1; i < 48; i++)
 	{
 		sum = a + b;
-		if ((a % 2 == 0) && (b % 2 == 0))
+		if (!(a % 2 == 0) && !(b % 2 == 0))
 			printf("%li", sum);
 		a = b;
 		b = sum;
