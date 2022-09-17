@@ -13,18 +13,18 @@ void print_times_table(int n)
 	int j = 0;
 	int mul = 0;
 
-	if (n == 0 || n == 15)
+	if (n == 0 || n > 15)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
-		for (i = 1; i < n + 1; i++)
+		for (i = 0; i < n + 1; i++)
 		{
-			for (j = 0; j < n + 1; j++)
+			_putchar('0');
+			_putchar(',');
+			_putchar(' ');
+			for (j = 1; j < n + 1; j++)
 			{
 				mul = i * j;
 				if (mul / 1000)
