@@ -23,7 +23,7 @@ void print_times_table(int n)
 		{
 			for (j = 0; j < n; j++)
 			{
-				for (k = 10000; k < 4; k = k / 10)
+				for (k = 10000; k > 0; k = k / 10)
 				{
 					if (n / k)
 					{
