@@ -16,13 +16,13 @@ int main(void)
 	long int fib = 0;
 
 	printf("%li, %li, ", a, b);
-	for (i = 1; i < 96; i++)
+	for (i = 1; i < 89; i++)
 	{
 		fib = a + b;
 		a = b;
 		b = fib;
 		printf("%li, ", fib);
 	}
-	printf("%li\n", fib);
+	printf("%li\n", a + b);
 	return (0);
 }
