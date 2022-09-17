@@ -15,14 +15,14 @@ int main(void)
 	long int b = 2;
 	long int sum = 0;
 
-	printf("%i, %i, ", a, b);
+	printf("%li, %li, ", a, b);
 	for (i = 1; i < 50; i++)
 	{
 		sum = a + b;
 		a = b;
 		b = sum;
-		printf("%i, ", sum);
+		printf("%li, ", sum);
 	}
-	printf("%i\n", sum);
+	printf("%li\n", sum);
 	return (0);
 }
