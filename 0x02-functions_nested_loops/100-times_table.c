@@ -22,24 +22,43 @@ void print_times_table(int n)
 	{
 		_putchar('0');
 		_putchar(',');
+		_putchar(' ');
 		for (i = 1; i < n + 1; i++)
 		{
 			for (j = 0; j < n + 1; j++)
 			{
 				mul = i * j;
-				for (k = 1000; k > 0; k = k / 10)
+				if (mul / 1000)
 				{
-					if (n / k)
-					{
-						_putchar('0' + (mul / k) % 10);
-					}
-					else
-					{
-						_putchar(' ');
-					}
+					_putchar('0' + (mul / 1000) % 10);
+					_putchar('0' + (mul / 100) % 10);
+					_putchar('0' + (mul / 10) % 10);
+					_putchar('0' + (mul) % 10);
 				}
-				if (j == n)
-					_putchar(',');
+				else if (mul / 100)
+				{
+					_putchar(' ');
+					_putchar('0' + (mul / 100) % 10);
+					_putchar('0' + (mul / 10) % 10);
+					_putchar('0' + (mul) % 10);
+				}
+				else if (mul / 10)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar('0' + (mul / 10) % 10);
+					_putchar('0' + (mul) % 10);
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar('0' + (mul) % 10);
+				}
+				_putchar(',');
+				if (j != n)
+					_putchar(' ');
 			}
 			_putchar('\n');
 		}
