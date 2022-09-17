@@ -15,14 +15,14 @@ int main(void)
 	unsigned long int b = 2;
 	unsigned long int fib = 0;
 
-	printf("%li, %li, ", a, b);
+	printf("%lu, %lu, ", a, b);
 	for (i = 1; i < 96; i++)
 	{
 		fib = a + b;
 		a = b;
 		b = fib;
-		printf("%li, ", fib);
+		printf("%lu, ", fib);
 	}
-	printf("%li\n", a + b);
+	printf("%lu\n", a + b);
 	return (0);
 }
