@@ -22,9 +22,9 @@ void print_times_table(int n)
 	{
 		_putchar('0');
 		_putchar(',');
-		for (i = 1; i < n; i++)
+		for (i = 1; i < n + 1; i++)
 		{
-			for (j = 0; j < n; j++)
+			for (j = 0; j < n + 1; j++)
 			{
 				mul = i * j;
 				for (k = 1000; k > 0; k = k / 10)
@@ -38,7 +38,7 @@ void print_times_table(int n)
 						_putchar(' ');
 					}
 				}
-				if (j == n - 1)
+				if (j == n)
 					_putchar(',');
 			}
 			_putchar('\n');
