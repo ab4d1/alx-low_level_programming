@@ -23,6 +23,7 @@ int main(void)
 		b = sum;
 		printf("%li, ", sum);
 	}
+	sum = a + b;
 	printf("%li\n", sum);
 	return (0);
 }
