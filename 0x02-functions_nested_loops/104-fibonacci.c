@@ -11,18 +11,18 @@
 int main(void)
 {
 	int i = 0;
-	double a = 1;
-	double b = 2;
-	double fib = 0;
+	long int a = 1;
+	long int b = 2;
+	long int fib = 0;
 
-	printf("%f, %f, ", a, b);
+	printf("%li, %li, ", a, b);
 	for (i = 1; i < 96; i++)
 	{
 		fib = a + b;
 		a = b;
 		b = fib;
-		printf("%f, ", fib);
+		printf("%li, ", fib);
 	}
-	printf("%f\n", fib);
+	printf("%li\n", fib);
 	return (0);
 }
