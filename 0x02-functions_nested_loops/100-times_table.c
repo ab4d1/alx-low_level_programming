@@ -11,7 +11,6 @@ void print_times_table(int n)
 {
 	int i = 0;
 	int j = 0;
-	int k = 0;
 	int mul = 0;
 
 	if (n == 0 || n == 15)
