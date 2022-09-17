@@ -16,7 +16,7 @@ int main(void)
 	long int fib = 0;
 	long int sum = 0;
 
-	for (i = 1; i < 50; i++)
+	for (i = 1; fib < 4000000; i++)
 	{
 		fib = a + b;
 		a = b;
