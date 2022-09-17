@@ -23,6 +23,6 @@ int main(void)
 		b = fib;
 		printf("%li, ", fib);
 	}
-	printf("%lli\n", a + b);
+	printf("%li\n", a + b);
 	return (0);
 }
