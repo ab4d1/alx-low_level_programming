@@ -20,9 +20,11 @@ void print_times_table(int n)
 	}
 	else
 	{
-		for (i = 0; i < n; i++)
+		_putchar('0');
+		_putchar(',');
+		for (i = 1; i < n; i++)
 		{
-			for (j = 0; j < n; j++)
+			for (j = 1; j < n; j++)
 			{
 				mul = i * j;
 				for (k = 10000; k > 0; k = k / 10)
