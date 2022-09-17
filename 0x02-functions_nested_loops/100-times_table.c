@@ -30,6 +30,7 @@ void print_times_table(int n)
 				mul = i * j;
 				for (k = 100; k >= 1; k = k / 10)
 				{
+					
 					if (mul / k)
 					{
 						_putchar('0' + (mul / k) % 10);
@@ -37,25 +38,7 @@ void print_times_table(int n)
 					else
 					{
 						_putchar(' ');
-					}/*
-					if (mul / 100)
-					{
-						_putchar('0' + (mul / 100) % 10);
-						_putchar('0' + (mul / 10) % 10);
-						_putchar('0' + (mul) % 10);
 					}
-					else if (mul / 10)
-					{
-						_putchar(' ');
-						_putchar('0' + (mul / 10) % 10);
-						_putchar('0' + (mul) % 10);
-					}
-					else
-					{
-						_putchar(' ');
-						_putchar(' ');
-						_putchar('0' + (mul) % 10);
-					}*/
 				}
 				if (j != n)
 				{
