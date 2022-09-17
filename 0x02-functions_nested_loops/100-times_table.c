@@ -45,9 +45,11 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar('0' + (mul) % 10);
 				}
-				_putchar(',');
 				if (j != n)
+				{
+					_putchar(',');
 					_putchar(' ');
+				}
 			}
 			_putchar('\n');
 		}
