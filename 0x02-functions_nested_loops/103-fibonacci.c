@@ -13,15 +13,17 @@ int main(void)
 	int i = 0;
 	long int a = 1;
 	long int b = 2;
+	long int fib = 0;
 	long int sum = 0;
 
-	for (i = 1; i < 48; i++)
+	for (i = 1; i < 50; i++)
 	{
-		sum = a + b;
-		if (!(a % 2 == 0) && !(b % 2 == 0))
-			printf("%li, ", sum);
+		fib = a + b;
 		a = b;
-		b = sum;
+		b = fib;
+		if ((fib % 2) == 0)
+			sum += fib;
 	}
+	printf("%i", sum);
 	return (0);
 }
