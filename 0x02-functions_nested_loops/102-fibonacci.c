@@ -11,12 +11,12 @@
 int main(void)
 {
 	int i = 0;
-	int sum = 1;
+	int sum = 0;
 
 	for (i = 1; i < 50; i++)
 	{
-		printf("%i, ", sum);
 		sum += i;
+		printf("%i, ", sum);
 	}
 	printf("%i\n", sum);
 	return (0);
