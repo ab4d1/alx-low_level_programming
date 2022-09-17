@@ -24,6 +24,6 @@ int main(void)
 		if ((fib % 2) == 0)
 			sum += fib;
 	}
-	printf("%i", sum);
+	printf("%li", sum);
 	return (0);
 }
