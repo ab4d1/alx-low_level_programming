@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+#include "main.h"
+
+/**
+ * main - entry
+ *
+ *Return: void
+ */
+
+int main(void)
+{
+	int i = 0;
+	long int a = 1;
+	long int b = 2;
+	long int fib = 0;
+
+	printf("%li, %li, ", a, b);
+	for (i = 1; i < 96; i++)
+	{
+		fib = a + b;
+		a = b;
+		b = fib;
+		printf("%li, ", fib);
+	}
+	printf("%li\n", fib);
+	return (0);
+}
