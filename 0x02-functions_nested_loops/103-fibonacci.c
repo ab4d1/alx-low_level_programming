@@ -19,7 +19,7 @@ int main(void)
 	{
 		sum = a + b;
 		if (!(a % 2 == 0) && !(b % 2 == 0))
-			printf("%li", sum);
+			printf("%li, ", sum);
 		a = b;
 		b = sum;
 	}
