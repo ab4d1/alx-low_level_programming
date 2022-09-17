@@ -10,13 +10,14 @@ void print_number(int n)
 {
 	int i = 0;
 	int j = 0;
-	int m = 0;
+	int m = 1;
 
 	if (n == 0)
 		_putchar('0');
 	if (n < 0)
 	{
 		_putchar('-');
+		m = m * 10;
 		m = -(n % 10);
 		n = n / 10;
 		n = -n;
@@ -29,10 +30,9 @@ void print_number(int n)
 	}
 	if (n != 0)
 		_putchar('0' + n);
-	for (j = 0; m > 0 ; j++)
+	for (j = 0; m > 9 ; j++)
 	{
 		_putchar('0' + m % 10);
 		m = m / 10;
 	}
-
 }
