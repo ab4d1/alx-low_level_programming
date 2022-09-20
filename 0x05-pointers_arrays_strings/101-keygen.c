@@ -18,17 +18,17 @@ unsigned long int _rand(unsigned long int next)
  * Return: print
  */
 
-char *main(void)
+int main(void)
 {
 	unsigned long int next = 1;
 	char pass[30];
+	int i = 0;
 
 	for (i = 0; i < 30; i++)
 	{
-		
 		pass[i] = ' ' + _rand(next) % 100;
 		next++;
 	}
 
-	return (pass);
+	return (0);
 }
