@@ -11,6 +11,7 @@ int _atoi(char *s)
 	int i = 0;
 	int num = 0;
 	int sign = -1;
+	int flag = 0;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
@@ -20,7 +21,9 @@ int _atoi(char *s)
 		{
 			num = num * 10;
 			num = num - (*(s + i) - '0');
-		}
+			flag = 1;
+		} else if (flag == 1)
+			break;
 	}
 
 
