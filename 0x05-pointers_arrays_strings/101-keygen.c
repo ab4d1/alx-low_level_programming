@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -29,6 +30,6 @@ int main(void)
 		pass[i] = ' ' + _rand(next) % 100;
 		next++;
 	}
-
+	printf("%s\n", pass);
 	return (0);
 }
