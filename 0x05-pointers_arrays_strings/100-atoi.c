@@ -14,10 +14,8 @@ int _atoi(char *s)
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		if (*(s + i) == '+')
-			sign++;
-		else if (*(s + i) == '-')
-			sign--;
+		if (*(s + i) == '-')
+			sign -= 1;
 		else if (*(s + i) >= '0' && *(s + i) <= '9')
 		{
 			num = num * 10;
@@ -25,7 +23,6 @@ int _atoi(char *s)
 		}
 	}
 
-	if (sign >= 0)
-		num = -num;
-	return (num);
+
+	return (sign * num);
 }
