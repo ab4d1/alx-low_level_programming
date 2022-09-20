@@ -17,7 +17,8 @@ void rev_string(char *s)
 		len++;
 	}
 
-	char rev[len];
+	const l = len;
+	char rev[l];
 
 	for (i = len - 1; i >= 0; i--)
 	{
