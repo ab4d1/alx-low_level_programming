@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98 - reset_to_98
+ * swap_int - swap_int
  *@a: pointer to int
  *@b: pointer to int
  * Return: print
