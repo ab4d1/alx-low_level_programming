@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strlen - _strlen
+ * main - main
  *@s: pointer to int
  * Return: print
  */
 
-int _strlen(char *s)
+int main(void)
 {
 	int i = 0;
 	int len = 0;
@@ -16,5 +16,5 @@ int _strlen(char *s)
 		len++;
 	}
 
-	return (len);
+	return (0);
 }
