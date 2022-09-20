@@ -11,6 +11,7 @@ unsigned long int _rand(unsigned long int next)
 {
     next = next * 1103515245 + 12345;
     next = ((unsigned)(next/65536) % 32768);
+	return (next);
 }
 
 /**
