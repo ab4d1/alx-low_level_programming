@@ -18,7 +18,6 @@ char *_strstr(char *haystack, char *needle)
 		len++;
 	for (i = 0; *(haystack + i) != '\0'; i++)
 	{
-		printf("%c ? %c , %ui\n", *(haystack + i), *(needle + i), j);
 		if (*(haystack + i) == *(needle + j))
 		{
 			j++;
