@@ -12,7 +12,6 @@ char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i = 0;
 	unsigned int j = 0;
-	unsigned int sum = 0;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
