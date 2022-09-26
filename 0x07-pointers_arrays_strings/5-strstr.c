@@ -12,20 +12,25 @@ char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i = 0;
 	unsigned int j = 0;
-	int flag = 0;
+	unsigned int len = 0;
 
+	for (i = 0; *(needle + i) != '\0'; i++)
+		len++;
 	for (i = 0; *(haystack + i) != '\0'; i++)
 	{
-		flag = 0;
-		for (j = 0; *(needle + j) != '\0'; j++)
+		printf("%c ? %c , %ui\n", *(haystack + i), *(needle + i), j);
+		if (*(haystack + i) == *(needle + j))
 		{
-			if (*(haystack + i) == *(needle + j))
-				flag = 1;
-			else if (*(haystack + i) != *(needle + j))
-				flag = 0;
+			j++;
 		}
-		if (flag == 1)
-			return (haystack + i);
+		else if (*(haystack + i) != *(needle + j))
+		{
+			j = 0;
+		}
+		if (j == len)
+		{
+			return (haystack + i - len + 1);
+		}
 	}
 	return (NULL);
 }
