@@ -11,13 +11,16 @@
 
 int main(int argc, char **argv)
 {
+	if (argc != 3)
+	{
+		printf("\n");
+		return (1);
+	}
+
 	int i = 0;
 	int a = argv[1];
 	int b = argv[2];
 	int m = a * b;
 
-	printf("%s\n", m);
-	if (argc == 3)
-		exit(EXIT_SUCCESS);
-	exit(EXIT_FAILURE);
+	return (0);
 }
