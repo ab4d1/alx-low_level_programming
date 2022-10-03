@@ -16,11 +16,6 @@ int main(int argc, char **argv)
 		printf("\n");
 		return (1);
 	}
-
-	int i = 0;
-	int a = argv[1];
-	int b = argv[2];
-	int m = a * b;
-
+	printf("%i\n", argv[1] * argv[2]);
 	return (0);
 }
