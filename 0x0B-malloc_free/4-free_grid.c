@@ -5,12 +5,12 @@
 
 /**
  * alloc_grid - print alphabet
- *@width:size
+ *@grid:size
  *@height:size
  * Return:void
  */
 
-int **alloc_grid(int width, int height)
+void free_grid(int **grid, int height)
 {
 	int **grid;
 	int i;
