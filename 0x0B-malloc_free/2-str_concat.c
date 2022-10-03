@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * _strdup - print alphabet
+ * str_concat - print alphabet
  *@s1:size
  *@s2:size
  * Return:void
