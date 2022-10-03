@@ -26,10 +26,9 @@ int main(int argc, char **argv)
 	{
 		if (cents / coins[i] != 0)
 		{
-
+			change += cents / coins[i];
 		}
 	}
-
 	printf("%i\n", change);
 	return (0);
 }
