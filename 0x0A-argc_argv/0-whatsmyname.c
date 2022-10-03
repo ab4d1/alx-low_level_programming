@@ -4,8 +4,8 @@
 /**
  * main - entry
  * docss
- * argc: no. of args
- * argv: args
+ * @argc: no. of args
+ * @argv: args
  * Return:0
  */
 
