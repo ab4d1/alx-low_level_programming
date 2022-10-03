@@ -9,13 +9,18 @@
  * Return:0
  */
 
-int main(int argc, int **argv)
+int main(int argc, char **argv)
 {
+	int a;
+	int b;
+
 	if (argc != 3)
 	{
 		printf("\n");
 		return (1);
 	}
-	printf("%i\n", argv[1] * argv[2]);
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	printf("%i\n", a * b);
 	return (0);
 }
