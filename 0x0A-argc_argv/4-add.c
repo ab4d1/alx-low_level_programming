@@ -26,6 +26,7 @@ int main(int argc, char **argv)
 	{
 		for (j = 0; *(argv[i] + j) !='\n'; j++)
 		{
+			printf("%c", *(argv[i] + j));
 			if (*(argv[i] + j) >= '0' && *(argv[i] + j) <= '9')
 			{
 				temp *= 10;
