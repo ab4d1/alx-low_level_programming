@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 	int change = 0;
 	int coins[5] = {25, 10, 5, 2, 1};
 
-	if (argc != 1)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
