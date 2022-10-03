@@ -38,6 +38,7 @@ int main(int argc, char **argv)
 			}
 		}
 		sum += temp;
+		temp = 0;
 	}
 	printf("%i\n", sum);
 	return (0);
