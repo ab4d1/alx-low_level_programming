@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	cents = argv[1];
+	cents = atoi(argv[1]);
 	for (i = 0; i < 5; i++)
 	{
 		if (cents / coins[i] != 0)
