@@ -3,6 +3,12 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * count_words - print alphabet
+ *@str:size
+ * Return:void
+ */
+
 int count_words(char *str)
 {
 	unsigned long int i;
@@ -21,6 +27,13 @@ int count_words(char *str)
 	}
 	return (words);
 }
+
+/**
+ * free_array - print alphabet
+ *@array:size
+ *@size:int
+ * Return:void
+ */
 
 void free_array(char **array, int size)
 {
