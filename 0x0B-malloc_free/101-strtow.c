@@ -16,8 +16,8 @@ char **strtow(char *str)
 	int len = 0;
 	int words = 0;
 	int word = 0;
-	char **s;
 	int flag = 1;
+	char **s;
 
 	if (str[0] == '\0' || str == NULL)
 		return (NULL);
@@ -33,16 +33,19 @@ char **strtow(char *str)
 			flag = 0;
 	}
 
-	s = (char **)malloc((words) * sizeof(char *));
+	s = malloc(words * sizeof(char *));
 	if (s[i] == NULL)
+	{
 		free(s);
+		return (NULL);
+	}
 	flag = 1;
 	printf("%i", words);
 	for (i = 0; i <= strlen(str); i++)
 	{
 		if ((str[i] == ' ' || str[i] == '\0') && flag == 0)
 		{
-			s[word] = (char *)malloc(len * sizeof(char));
+			*(s + word) = malloc(len * sizeof(char));
 			if (s[word] == NULL)
 			{
 				while (word >= 0)
@@ -55,8 +58,10 @@ char **strtow(char *str)
 			}
 			for (j = 0; j < len; j++)
 			{
-				s[word][j] = str[i - len + j - 1];
+				s[word][j] = (char)str[i - len + j];
+				printf("%c, %li", str[i - len + j], i - len + j);
 			}
+			printf("%s\n", s[word]);
 			s[word][j] = '\0';
 			word++;
 			flag = 1;
@@ -69,6 +74,7 @@ char **strtow(char *str)
 			len++;
 			flag = 0;
 		}
+		printf("c %c\ti= %lu\tword %i\tflag %i\tlen %i\n", str[i], i, word, flag, len);
 	}
 	return (s);
 }

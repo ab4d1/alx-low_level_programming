@@ -3,21 +3,12 @@
 #include <stdlib.h>
 
 /**
- * print_tab - Prints an array of string
- * @tab: The array to print
+ * simple_print_buffer - prints buffer in hexa
+ * @buffer: the address of memory to print
+ * @size: the size of the memory to print
  *
- * Return: nothing
+ * Return: Nothing.
  */
-void print_tab(char **tab)
-{
-    int i;
-
-    for (i = 0; tab[i] != NULL; ++i)
-    {
-        printf("%s\n", tab[i]);
-    }
-}
-
 void simple_print_buffer(char *buffer, unsigned int size)
 {
     unsigned int i;
@@ -42,19 +33,19 @@ void simple_print_buffer(char *buffer, unsigned int size)
 /**
  * main - check the code for ALX School students.
  *
- * Return: 1 if an error occurred, 0 otherwise
+ * Return: Always 0.
  */
 int main(void)
 {
-    char **tab;
-    
-    tab = strtow("ALX  School         #cisfun      ");
-    if (tab == NULL)
+    char *buffer;
+
+    buffer = create_array(98, 'H');
+    if  (buffer == NULL)
     {
-        printf("Failed\n");
+        printf("failed to allocate memory\n");
         return (1);
     }
-    simple_print_buffer(tab[0],10);
-    print_tab(tab);
+    simple_print_buffer(buffer, 98);
+    free(buffer);
     return (0);
 }
