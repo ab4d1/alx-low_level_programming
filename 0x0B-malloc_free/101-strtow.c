@@ -67,19 +67,5 @@ char **strtow(char *str)
 			flag = 0;
 		}
 	}
-	for (i = 0; i < words; i++)
-	{
-		s[i] = (char *)malloc(len * sizeof(char));
-		if (s[i] == NULL)
-		{
-			while (i >= 0)
-			{
-				free(s[i]);
-				i--;
-			}
-			free(s);
-			return (NULL);
-		}
-	}
 	return (s);
 }
