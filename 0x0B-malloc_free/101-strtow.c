@@ -32,9 +32,11 @@ char **strtow(char *str)
 		else if (str[i] != ' ')
 			flag = 0;
 	}
+
 	s = (char **)malloc((words) * sizeof(char *));
 	if (s[i] == NULL)
 		free(s);
+	flag = 1;
 	for (i = 0; i < strlen(str); i++)
 	{
 		if (str[i] == ' ' && flag == 0)
