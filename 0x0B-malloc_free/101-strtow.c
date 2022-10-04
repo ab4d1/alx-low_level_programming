@@ -47,7 +47,7 @@ char **strtow(char *str)
 					free(s[word]);
 					word--;
 				}
-				free(word);
+				free(s);
 				return (NULL);
 			}
 			for (j = 0; j < len; j++)
