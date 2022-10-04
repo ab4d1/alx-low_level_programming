@@ -52,5 +52,6 @@ int main(void)
     {
         free(grid[i]);
     }
+    free(grid);
     return (0);
 }
