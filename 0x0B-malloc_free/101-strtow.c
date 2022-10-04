@@ -71,13 +71,10 @@ char **strtow(char *str)
 				s[word][j] = (char)str[i - len + j];
 			}
 			s[word][j] = '\0';
-			word++;
-			flag = 1;
-			len = 0;
+			word++, flag = 1, len = 0;
 		} else if (str[i] != ' ')
 		{
-			len++;
-			flag = 0;
+			len++, flag = 0;
 		}
 	}
 	s[word] = NULL;
