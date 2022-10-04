@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * alloc_grid - print alphabet
+ * free_grid - print alphabet
  *@grid:size
  *@height:size
  * Return:void
@@ -12,8 +12,6 @@
 
 void free_grid(int **grid, int height)
 {
-
-	
 	int i;
 
 	for (i = 0; i < height; i++)
