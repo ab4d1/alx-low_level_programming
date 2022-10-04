@@ -22,9 +22,9 @@ char **strtow(char *str)
 	if (str[0] == '\0' || str == NULL)
 		return (NULL);
 
-	for (i = 0; i < strlen(str); i++)
+	for (i = 0; i <= strlen(str); i++)
 	{
-		if (str[i] == ' ' && flag == 0)
+		if ((str[i] == ' ' || str[i] == '\0') && flag == 0)
 		{
 			words++;
 			flag = 1;
