@@ -55,7 +55,7 @@ char **strtow(char *str)
 			}
 			for (j = 0; j < len; j++)
 			{
-				s[word][j] = str[i - len + j];
+				s[word][j] = str[i - len + j - 1];
 			}
 			s[word][j] = '\0';
 			word++;
