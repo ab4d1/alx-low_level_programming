@@ -34,7 +34,7 @@ char **strtow(char *str)
 	}
 
 	s = malloc((words + 1) * sizeof(char *));
-	if (s == NULL)
+	if (s == NULL || words == 0)
 	{
 		free(s);
 		return (NULL);
