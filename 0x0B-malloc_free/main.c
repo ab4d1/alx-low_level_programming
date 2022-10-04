@@ -54,7 +54,6 @@ int main(void)
         printf("Failed\n");
         return (1);
     }
-    simple_print_buffer(tab[0],10);
     print_tab(tab);
     return (0);
 }
