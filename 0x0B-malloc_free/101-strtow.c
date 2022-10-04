@@ -37,6 +37,7 @@ char **strtow(char *str)
 	if (s[i] == NULL)
 		free(s);
 	flag = 1;
+	printf("%i", words);
 	for (i = 0; i < strlen(str); i++)
 	{
 		if (str[i] == ' ' && flag == 0)
