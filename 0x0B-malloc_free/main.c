@@ -48,10 +48,6 @@ int main(void)
     grid[0][3] = 98;
     grid[3][4] = 402;
     print_grid(grid, 63, 41);
-    for (i = 0; i < 41; i++)
-    {
-        free(grid[i]);
-    }
     free(grid);
     return (0);
 }
