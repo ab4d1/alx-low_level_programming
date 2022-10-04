@@ -19,7 +19,7 @@ char **strtow(char *str)
 	char **s;
 	int flag = 1;
 
-	if (str == "" || str == NULL)
+	if (str[0] == '\0' || str == NULL)
 		return (NULL);
 
 	for (i = 0; i < strlen(str); i++)
