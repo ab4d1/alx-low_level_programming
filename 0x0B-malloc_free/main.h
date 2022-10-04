@@ -7,4 +7,3 @@ char *argstostr(int ac, char **av);
 char **strtow(char *str);
 void free_array(char **array, int size);
 int count_words(char *str);
-
