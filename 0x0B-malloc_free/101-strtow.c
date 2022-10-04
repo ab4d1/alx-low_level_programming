@@ -38,9 +38,9 @@ char **strtow(char *str)
 		free(s);
 	flag = 1;
 	printf("%i", words);
-	for (i = 0; i < strlen(str); i++)
+	for (i = 0; i <= strlen(str); i++)
 	{
-		if (str[i] == ' ' && flag == 0)
+		if ((str[i] == ' ' || str[i] == '\0') && flag == 0)
 		{
 			s[word] = (char *)malloc(len * sizeof(char));
 			if (s[word] == NULL)
