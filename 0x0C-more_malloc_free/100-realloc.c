@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _realloc - print alphabet
@@ -25,9 +26,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	temp_ptr = malloc(new_size);
 	if (temp_ptr == NULL)
 		return (NULL);
-	for (i = 0; i < old_size; i++)
-	{
-		temp_ptr[i] = ptr[i];
-	}
+	memcpy(temp_ptr, ptr, old_size);
 	return (temp_ptr);
 }
