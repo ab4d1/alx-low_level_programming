@@ -12,10 +12,22 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *ret;
+	void *temp_ptr;
+	unsigned int i = 0;
 
-	ret = malloc(b);
-	if (ret == NULL)
-		exit(98);
-	return (ret);
+	if (new_size == old_size)
+		return (ptr);
+	else if (new_size == 0)
+	{
+		free(ptr);
+		return (NULL);
+	}
+	temp_ptr = malloc(new_size);
+	if (temp_ptr == NULL)
+		return (NULL);
+	for (i = 0; i < old_size; i++)
+	{
+		temp_ptr[i] = ptr[i];
+	}
+	return (temp_ptr);
 }
