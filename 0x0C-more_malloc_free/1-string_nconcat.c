@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * create_array - print alphabet
+ * string_nconcat - print alphabet
  *@s1:size
  *@s2:char
  *@n:char
