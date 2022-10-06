@@ -27,6 +27,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (cat == NULL)
 	{
 		free(cat);
+		exit(EXIT_FAILURE);
 		return (NULL);
 	}
 
