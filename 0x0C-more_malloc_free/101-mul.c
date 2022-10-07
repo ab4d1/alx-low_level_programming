@@ -68,4 +68,5 @@ int main(int argc, char **argv)
 	res = system(args);
 	if (res == 0)
 		return (0);
+	return (0);
 }
