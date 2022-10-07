@@ -4,10 +4,9 @@
 #include "main.h"
 
 /**
- * string_nconcat - print alphabet
+ * string_concat - print alphabet
  *@s1:size
  *@s2:char
- *@n:char
  * Return:void
  */
 
@@ -15,11 +14,6 @@ char *string_concat(char *s1, char *s2)
 {
 	char *cat;
 	unsigned int i;
-
-	if (s1 == NULL)
-		s1 = '\0';
-	if (s2 == NULL)
-		s2 = '\0';
 
 	cat = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
 	if (cat == NULL)
@@ -51,7 +45,10 @@ char *string_concat(char *s1, char *s2)
 int main(int argc, char **argv)
 {
 	int res;
+	unsigned int i;
 	char *args;
+	char *endstr = " | bc | tr -d '\\\\' | tr -d '\\\n'";
+	char *startstr = "echo ";
 
 	if (argc != 3)
 	{
@@ -59,13 +56,26 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
+	for (i = 0; i < strlen(argv[1]); i++)
+		if (argv[1][i] < '0' || argv[1][i] > '9')
+			{
+				printf("Error\n");
+				exit(98);
+			}
+	for (i = 0; i < strlen(argv[2]); i++)
+		if (argv[2][i] < '0' || argv[2][i] > '9')
+			{
+				printf("Error\n");
+				exit(98);
+			}
 	/*res = malloc(sizeof(char) * (1 + strlen(argv[1]) + strlen(argv[2])));*/
-	args = malloc(sizeof(char) * (12 + strlen(argv[1]) + strlen(argv[2])));
-	args = string_concat("echo ", argv[1]);
+	args = malloc(sizeof(char) * (strlen(startstr) + strlen(endstr) + 2 + strlen(argv[1]) + strlen(argv[2])));
+	args = string_concat(startstr, argv[1]);
 	args = string_concat(args, "*");
 	args = string_concat(args, argv[2]);
-	args = string_concat(args, " | bc");
+	args = string_concat(args, endstr);
 	res = system(args);
+	printf("\n");
 	if (res == 0)
 		return (0);
 	return (0);
