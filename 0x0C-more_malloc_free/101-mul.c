@@ -68,7 +68,6 @@ int main(int argc, char **argv)
 				printf("Error\n");
 				exit(98);
 			}
-	/*res = malloc(sizeof(char) * (1 + strlen(argv[1]) + strlen(argv[2])));*/
 	args = malloc(sizeof(char) * (strlen(startstr) + strlen(endstr) + 2 + strlen(argv[1]) + strlen(argv[2])));
 	args = string_concat(startstr, argv[1]);
 	args = string_concat(args, "*");
