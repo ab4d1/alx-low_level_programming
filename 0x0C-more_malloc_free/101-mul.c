@@ -66,5 +66,6 @@ int main(int argc, char **argv)
 	args = string_concat(args, argv[2]);
 	args = string_concat(args, " | bc");
 	res = system(args);
-	return (0);
+	if (res == 0)
+		return (0);
 }
