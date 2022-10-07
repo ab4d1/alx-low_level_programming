@@ -41,7 +41,7 @@ int main(void)
     char *p;
     int i;
     int old_size = 30;
-    int new_size = 120;
+    int new_size = 0;
 
     p = malloc(sizeof(char) * old_size);
     i = 0;
@@ -50,14 +50,17 @@ int main(void)
         p[i++] = old_size;
     }
     simple_print_buffer(p, old_size);
+    printf("\n");
     p = _realloc(NULL, sizeof(char) * old_size, sizeof(char) * new_size);
     simple_print_buffer(p, new_size);
+    printf("\n");
     i = 0;
     while (i < new_size)
     {
         p[i++] = new_size;
     }
     simple_print_buffer(p, new_size);
+    printf("\n");
     free(p);
     return (0);
 }

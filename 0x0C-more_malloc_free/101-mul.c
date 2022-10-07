@@ -69,6 +69,11 @@ int main(int argc, char **argv)
 				exit(98);
 			}
 	args = malloc(sizeof(char) * (strlen(startstr) + strlen(endstr) + 2 + strlen(argv[1]) + strlen(argv[2])));
+	if (args == NULL)
+	{
+		printf("Error\n");
+		exit(98);
+	}
 	args = string_concat(startstr, argv[1]);
 	args = string_concat(args, "*");
 	args = string_concat(args, argv[2]);
