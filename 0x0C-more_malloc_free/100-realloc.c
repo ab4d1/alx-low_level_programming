@@ -30,6 +30,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		min = old_size;
 	else
 		min = new_size;
-	memcpy(temp_ptr, ptr, min);
+	if (ptr != NULL)
+		memcpy(temp_ptr, ptr, min);
 	return (temp_ptr);
 }
