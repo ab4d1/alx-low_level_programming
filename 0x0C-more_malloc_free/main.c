@@ -40,15 +40,24 @@ int main(void)
 {
     char *p;
     int i;
+    int old_size = 11;
+    int new_size = 31;
 
-    p = malloc(sizeof(char) * 10);
-    p = _realloc(p, sizeof(char) * 10, sizeof(char) * 98);
+    p = malloc(sizeof(char) * old_size);
     i = 0;
-    while (i < 98)
+    while (i < old_size)
     {
-        p[i++] = 98;
+        p[i++] = old_size;
     }
-    simple_print_buffer(p, 98);
+    simple_print_buffer(p, old_size);
+    p = _realloc(p, sizeof(char) * old_size, sizeof(char) * new_size);
+    simple_print_buffer(p, new_size);
+    i = 0;
+    while (i < new_size)
+    {
+        p[i++] = new_size;
+    }
+    simple_print_buffer(p, new_size);
     free(p);
     return (0);
 }
