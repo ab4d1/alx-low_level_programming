@@ -74,6 +74,7 @@ int main(int argc, char **argv)
 	args = string_concat(args, argv[2]);
 	args = string_concat(args, endstr);
 	res = system(args);
+	free(args);
 	printf("\n");
 	if (res == 0)
 		return (0);
