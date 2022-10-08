@@ -58,13 +58,13 @@ int main(int argc, char **argv)
 	for (i = 0; i < strlen(argv[1]); i++)
 		if (argv[1][i] < '0' || argv[1][i] > '9')
 			{
-				printf("1 has letter %c Error\n", argv[1][i]);
+				printf("Error\n");
 				exit(98);
 			}
 	for (i = 0; i < strlen(argv[2]); i++)
 		if (argv[2][i] < '0' || argv[2][i] > '9')
 			{
-				printf("2 has Error\n");
+				printf("Error\n");
 				exit(98);
 			}
 
