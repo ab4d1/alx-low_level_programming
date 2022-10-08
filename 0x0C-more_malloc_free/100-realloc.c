@@ -30,6 +30,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	if (old_size == new_size)
 	{
+		free(temp_ptr)
 		return ptr;
 	}
 	else if (old_size > new_size)
