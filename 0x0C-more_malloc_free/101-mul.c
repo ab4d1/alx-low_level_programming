@@ -31,8 +31,6 @@ char *string_concat(char *s1, char *s2)
 		cat[i] = s2[i - strlen(s1)];
 	}
 	cat[i] = '\0';
-	free(s1);
-	free(s2);
 	return (cat);
 }
 
@@ -60,13 +58,13 @@ int main(int argc, char **argv)
 	for (i = 0; i < strlen(argv[1]); i++)
 		if (argv[1][i] < '0' || argv[1][i] > '9')
 			{
-				printf("Error\n");
+				printf("1 has letter %c Error\n", argv[1][i]);
 				exit(98);
 			}
 	for (i = 0; i < strlen(argv[2]); i++)
 		if (argv[2][i] < '0' || argv[2][i] > '9')
 			{
-				printf("Error\n");
+				printf("2 has Error\n");
 				exit(98);
 			}
 
