@@ -67,12 +67,7 @@ int main(int argc, char **argv)
 				printf("Error\n");
 				exit(98);
 			}
-	args = malloc(sizeof(char) * (7 + strlen(endstr) + strlen(argv[1]) + strlen(argv[2])));
-	if (args == NULL)
-	{
-		printf("Error\n");
-		exit(98);
-	}
+
 	args = string_concat("echo ", argv[1]);
 	args = string_concat(args, "*");
 	args = string_concat(args, argv[2]);
