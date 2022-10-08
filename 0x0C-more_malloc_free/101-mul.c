@@ -48,7 +48,6 @@ int main(int argc, char **argv)
 	unsigned int i;
 	char *args;
 	char *endstr = " | bc | tr -d '\\\\' | tr -d '\\\n'";
-	char *startstr = "echo ";
 
 	if (argc != 3)
 	{
@@ -68,13 +67,13 @@ int main(int argc, char **argv)
 				printf("Error\n");
 				exit(98);
 			}
-	args = malloc(sizeof(char) * (strlen(startstr) + strlen(endstr) + 2 + strlen(argv[1]) + strlen(argv[2])));
+	args = malloc(sizeof(char) * (7 + strlen(endstr) + strlen(argv[1]) + strlen(argv[2])));
 	if (args == NULL)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	args = string_concat(startstr, argv[1]);
+	args = string_concat("echo ", argv[1]);
 	args = string_concat(args, "*");
 	args = string_concat(args, argv[2]);
 	args = string_concat(args, endstr);
