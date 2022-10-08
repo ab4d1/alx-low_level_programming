@@ -31,6 +31,8 @@ char *string_concat(char *s1, char *s2)
 		cat[i] = s2[i - strlen(s1)];
 	}
 	cat[i] = '\0';
+	free(s1);
+	free(s2);
 	return (cat);
 }
 
