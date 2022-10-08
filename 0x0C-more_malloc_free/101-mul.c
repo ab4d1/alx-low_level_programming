@@ -17,7 +17,7 @@ char *string_concat_5(char *s1, char *s2, char *s3, char *s4, char *s5)
 {
 	char *cat;
 	unsigned int i;
-	unsigned int len = strlen(s1) + strlen(s2) + strlen(s3) + strlen(s4) + strlen(s5);
+	unsigned int len;
 	unsigned int temp_len = 0;
 
 	cat = malloc(sizeof(char) * (len + 1));
@@ -27,7 +27,8 @@ char *string_concat_5(char *s1, char *s2, char *s3, char *s4, char *s5)
 		return (NULL);
 	}
 
-	for (i = 0; i < strlen(s1); i++)
+	len = strlen(s1) + strlen(s2) + strlen(s3) + strlen(s4) + strlen(s5);
+	for (i = temp_len; i < temp_len + strlen(s1); i++)
 		cat[i] = s1[i];
 	temp_len = strlen(s1);
 	for (i = temp_len; i < temp_len + strlen(s2); i++)
@@ -39,7 +40,7 @@ char *string_concat_5(char *s1, char *s2, char *s3, char *s4, char *s5)
 	for (i = temp_len; i < temp_len + strlen(s4); i++)
 		cat[i] = s4[i - temp_len];
 	temp_len += strlen(s4);
-	for (i = temp_len; i < temp_len + strlen(s2); i++)
+	for (i = temp_len; i < temp_len + strlen(s5); i++)
 		cat[i] = s5[i - temp_len];
 	temp_len += strlen(s5);
 	cat[i] = '\0';
