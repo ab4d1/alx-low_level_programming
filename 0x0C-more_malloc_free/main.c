@@ -40,12 +40,17 @@ void simple_print_buffer(char *buffer, unsigned int size)
 int main(void)
 {
 	char *p;
+	char *new_p;
 	unsigned int i;
 	unsigned int new_size;
 
-	new_size = 0;
-	p = _realloc(NULL, sizeof(char) * 30, sizeof(char) * new_size);
-	if (p == NULL)
+	new_size = 30;
+	p = malloc(sizeof(char) * 30);
+	new_p = _realloc(p, sizeof(char) * 30, sizeof(char) * new_size);
+	simple_print_buffer(p, new_size);
+    printf("\n");
+	simple_print_buffer(new_p, new_size);
+	if (p == NULL || new_p != p)
 	{
 		printf("Failed\n");
 		return (1);
@@ -55,7 +60,6 @@ int main(void)
 	{
 		p[i++] = 98;
 	}
-	simple_print_buffer(p, new_size);
 	free(p);
 	return (0);
 }
