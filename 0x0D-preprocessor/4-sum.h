@@ -1,4 +1,5 @@
 
-#ifndef SUM(X, Y)
+#ifndef FUNCTIONSUM
+#define FUNCTIONSUM
 #define SUM(X, Y) ((X) + (Y))
 #endif
