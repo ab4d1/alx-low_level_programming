@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(100);
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 	if (op_func == NULL)
 	{
 		printf("Error\n");
-		exit(100);
+		exit(99);
 	}
 	printf("%i\n", op_func(a, b));
 	return (0);
