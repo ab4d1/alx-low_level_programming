@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 	if (op_func == NULL)
 	{
 		printf("Error\n");
-		exit(99);
+		exit(100);
 	}
 	printf("%i\n", op_func(a, b));
 	return (0);
