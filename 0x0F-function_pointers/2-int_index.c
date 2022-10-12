@@ -4,6 +4,7 @@
 /**
  * int_index - print alphabet
  *@array:char
+ *@size:char
  *@cmp:char
  * Return:void
  */
