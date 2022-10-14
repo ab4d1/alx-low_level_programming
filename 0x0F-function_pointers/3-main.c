@@ -21,6 +21,11 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
+	if (strlen(argv[2]) > 2)
+	{
+		printf("Error\n");
+		exit(99);
+	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 	op_func = get_op_func(argv[2]);
