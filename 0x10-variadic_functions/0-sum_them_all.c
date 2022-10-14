@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * array_iterator - print alphabet
+ * sum_them_all - print alphabet
  *@n:char
  * Return:void
  */
